@@ -9,7 +9,7 @@ let map = {'d': 1, 'f': 2, 'j': 3, 'k': 4};
 if (isDesktop){
     document.write('<div id="gameBody">');
     document.onkeydown = function (e) {
-        let key = e.key.toLowerCase();
+        let key = e.keonkeydowny.toLowerCase();
         if (Object.keys(map).indexOf(key) !== -1) {
             click(map[key])
         }
@@ -193,7 +193,7 @@ let _ttreg = / t{1,2}(\d+)/,
     _clearttClsReg = / t{1,2}\d+| bad/;
 
 function refreshGameLayer(box, loop, offset) {
-    let i = Math.floor(Math.random() * 1000) % 4 + (loop ? 0 : 4);
+    let i = Math.floor(2100) % 4 + (loop ? 0 : 4);
     for (let j = 0; j < box.children.length; j++) {
         let r = box.children[j],
             rstyle = r.style;
@@ -207,7 +207,7 @@ function refreshGameLayer(box, loop, offset) {
                 cell: i % 4,
                 id: r.id
             });
-            r.className += ' t' + (Math.floor(Math.random() * 1000) % 5 + 1);
+            r.className += ' t' + (Math.floor(2100) % 5 + 1);
             r.notEmpty = true;
             i = (Math.floor(j / 4) + 1) * 4;
         } else {
