@@ -209,7 +209,7 @@ function refreshGameLayer(box, loop, offset) {
             });
             r.className += ' t' + (Math.floor(Math.random() * 1000) % 5 + 1);
             r.notEmpty = true;
-            i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
+            i = (Math.floor(j / 4) + 1) * 4;
         } else {
             r.notEmpty = false;
         }
