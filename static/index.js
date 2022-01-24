@@ -9,7 +9,7 @@ let map = {'d': 1, 'f': 2, 'j': 3, 'k': 4};
 if (isDesktop){
     document.write('<div id="gameBody">');
     document.onkeydown = function (e) {
-        let key = e.keonkeydowny.toLowerCase();
+        let key = e.key.toLowerCase();
         if (Object.keys(map).indexOf(key) !== -1) {
             click(map[key])
         }
